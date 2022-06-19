@@ -1,7 +1,7 @@
 // ==UserScript==
 // @encoding    utf-8
-// @name        lorem-ipsum
-// @description Lorem-ipsum is a sample userscript.
+// @name        namuwiki-powerlink-mitigation
+// @description Mitigate powerlink ads from NamuWiki.
 // @version     1.0.0
 // @author      HoJeong Go <seia@outlook.kr>
 // @license     ISC
