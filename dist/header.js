@@ -7,10 +7,10 @@
 // @license     ISC
 //
 // @namespace   github:seia-soto
-// @homepageURL https://github.com/seia-soto
-// @supportURL  https://github.com/seia-soto/lorem-ipsum/issues
-// @updateURL   https://github.com/seia-soto/lorem-ipsum/raw/master/dist/bundle.user.js
-// @downloadURL https://github.com/seia-soto/lorem-ipsum/raw/master/dist/bundle.user.js
+// @homepageURL https://github.com/seia-soto/namuwiki-powerlink-mitigation
+// @supportURL  https://github.com/seia-soto/namuwiki-powerlink-mitigation/issues
+// @updateURL   https://github.com/seia-soto/namuwiki-powerlink-mitigation/raw/master/dist/bundle.user.js
+// @downloadURL https://github.com/seia-soto/namuwiki-powerlink-mitigation/raw/master/dist/bundle.user.js
 //
 // @grant       unsafeWindow
 // @run-at      document-start
