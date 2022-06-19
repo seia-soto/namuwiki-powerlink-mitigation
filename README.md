@@ -1,7 +1,6 @@
-# userscript-boilerplate
+# namuwiki-powerlink-mitigation
 
-Hi, there!
-I'm happy to expose my userscript boilerplate to you who'll distribute this to worldwide.
+Mitigate powerlink ads from NamuWiki.
 
 ## table of contents
 
@@ -16,13 +15,13 @@ I'm happy to expose my userscript boilerplate to you who'll distribute this to w
 To install this userscript, please use the following link:
 
 ```
-https://github.com/seia-soto/lorem-ipsum/raw/master/dist/bundle.user.js
+https://github.com/seia-soto/namuwiki-powerlink-mitigation/raw/master/dist/bundle.user.js
 ```
 
 If you want to verify the script content, you can download the MD5 hash of the script from the following link:
 
 ```
-https://github.com/seia-soto/lorem-ipsum/raw/master/dist/checksum
+https://github.com/seia-soto/namuwiki-powerlink-mitigation/raw/master/dist/checksum
 ```
 
 # features
