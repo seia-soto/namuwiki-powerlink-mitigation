@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/seia-soto/namuwiki-powerlink-mitigation/compare/v1.0.0...v1.1.0) (2022-06-19)
+
+
+### Features
+
+* add missing domain name matches ([084712d](https://github.com/seia-soto/namuwiki-powerlink-mitigation/commit/084712d61d207c95f63403e0e74074b17db1a9a0))
+
 ## 1.0.0 (2022-06-19)
 
 
