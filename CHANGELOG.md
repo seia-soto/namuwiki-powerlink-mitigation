@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.0.0 (2022-06-19)
+
+
+### Features
+
+* add meta and release ([d4189ec](https://github.com/seia-soto/namuwiki-powerlink-mitigation/commit/d4189ec2b078cb005f5c51fd88095313808b5c2e))
+* mitigate powerlink ([cae9213](https://github.com/seia-soto/namuwiki-powerlink-mitigation/commit/cae9213045d3c633b4013e2b6a600d90f5e441f8))
+
+
+### Bug Fixes
+
+* **ci:** invalid type for release-please ([30dcb17](https://github.com/seia-soto/namuwiki-powerlink-mitigation/commit/30dcb173a6f1ae07c4052e55a130232f7143584d))
+
 ## 1.0.0 (2022-06-18)
 
 
