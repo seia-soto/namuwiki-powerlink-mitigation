@@ -1,7 +1,7 @@
 {
   "name": "namuwiki-powerlink-mitigation",
   "description": "Mitigate powerlink ads from NamuWiki.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "author": "HoJeong Go <seia@outlook.kr>",
   "license": "ISC",
