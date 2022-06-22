@@ -1,18 +1,1 @@
-(()=>{var o=unsafeWindow||window,i="INITIAL_STATE",t={[i]:[],fired:!1,warningShown:!1},s=new Proxy(console.log,{apply(e,n,r){Reflect.apply(e,n,["[namuwiki-powerlink-mitigation]",...r])}}),d=e=>e,c=()=>{if(t.warningShown)return;let e=(Date.now()*Math.random()*Math.atanh(Date.now())).toString(36).slice(0,6);o.document.querySelector("div#app>div[id]>div+div")?.insertAdjacentHTML("beforebegin",`
-<div id="${e}">
-  <style>
-    #${e} { padding: 2px 16px; }
-  </style>
-  <p>
-    <strong>namuwiki-powerlink-mitigation</strong>
-    \uAD11\uACE0 \uAC12\uC774 \uC815\uC0C1\uC801\uC73C\uB85C \uCC28\uB2E8\uB418\uC9C0 \uC54A\uC558\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4.
-    \uC544\uB798\uC5D0\uC11C \uC18D\uC131 \uAC12\uC744 \uBCF5\uC0AC\uD558\uC5EC
-    <a
-      href="https://github.com/seia-soto/namuwiki-powerlink-mitigation/issues"
-    >\uC5EC\uAE30</a>\uC5D0\uC11C \uC81C\uBCF4\uD574\uC8FC\uC138\uC694.
-    <br/>
-
-    <button>\uC18D\uC131 \uAC12 \uBCF4\uAE30</button>
-  </p>
-</div>
-`),o.document.getElementById(e)?.querySelector("button")?.addEventListener("click",()=>{let r=JSON.stringify({[i]:t[i],ua:navigator.userAgent}).replace(/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/g,"IP_ADDR_HIDDEN");o.prompt("Please copy to clipboard",r)},{once:!0}),t.warningShown=!0},a=e=>{for(let n in e)if(typeof e[n]=="object")e[n]=a(e[n]);else if(typeof e[n]=="string"&&e[n].indexOf("adcr")>=0)try{return JSON.parse(e[n]),s("defusing ad alignments"),t.fired=!0,"[]"}catch(r){d(r)}return e};Object.defineProperty(o,i,{get(){return t[i][t[i].length-1]},set(e){t[i].push(a(e)),t.fired||c()}});})();
+(()=>{var n=unsafeWindow||window,i={secret:Math.random()+(Date.now()*Math.random()).toString(36)},y=new Proxy(console.log,{apply(o,t,e){Reflect.apply(o,t,["[namuwiki-powerlink-mitigation]",...e])}});n.open=new Proxy(n.open,{apply(o,t,e){let[l]=e,r=()=>Reflect.apply(o,t,e);return e.indexOf(i.secret)>=0?l:r()}});n.HTMLTableElement.prototype.appendChild=new Proxy(n.HTMLTableElement.prototype.appendChild,{apply(o,t,e){let[l]=e,r=()=>Reflect.apply(o,t,e);if(!l.querySelectorAll("img").length)return r();let c=l.querySelectorAll("a");for(let d of c){let f=n.open,s=!1;if(n.open=new Proxy(n.open,{apply(m,u,a){a.push(i.secret);let p=Reflect.apply(m,u,a);return typeof p=="string"&&(p.includes("saedu.naver.com/adbiz/searchad/")||p.includes("adcr.naver.com/adcr?x="))&&(s=!0),p}}),d.click(),n.open=f,s)return setTimeout(()=>{y("removing the target element"),t.remove()},1),l}}});})();
