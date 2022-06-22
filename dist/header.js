@@ -2,7 +2,7 @@
 // @encoding    utf-8
 // @name        namuwiki-powerlink-mitigation
 // @description Mitigate powerlink ads from NamuWiki.
-// @version     1.0.1
+// @version     1.2.0
 // @author      HoJeong Go <seia@outlook.kr>
 // @license     ISC
 //
