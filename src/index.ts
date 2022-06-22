@@ -9,6 +9,17 @@ const state = {
 	warningShown: false,
 };
 
+const log = new Proxy(
+	console.log,
+	{
+		apply(target, thisArg, argArray) {
+			Reflect.apply(target, thisArg, ['[namuwiki-powerlink-mitigation]', ...argArray]);
+		},
+	},
+);
+
+const noop = (a?: any) => a;
+
 const appendWarning = () => {
 	if (state.warningShown) {
 		return;
@@ -59,11 +70,18 @@ const defusePowerlink = (root: object) => {
 	for (const property in root) {
 		if (typeof root[property] === 'object') {
 			root[property] = defusePowerlink(root[property]);
-		} else if (property === 'enable_ads' && !isNaN(root[property])) {
-			console.log('[namuwiki-powerlink-mitigation] defused namuwiki powerlink');
+		} else if (typeof root[property] === 'string' && (root[property] as string).indexOf('adcr') >= 0) {
+			try {
+				JSON.parse(root[property]);
 
-			root[property] = '0';
-			state.fired = true;
+				log('defusing ad alignments');
+
+				state.fired = true;
+
+				return '[]';
+			} catch (error) {
+				noop(error);
+			}
 		}
 	}
 
