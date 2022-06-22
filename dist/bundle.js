@@ -1,4 +1,4 @@
-(()=>{var o=unsafeWindow||window,i="INITIAL_STATE",n={[i]:[],fired:!1,warningShown:!1},s=()=>{if(n.warningShown)return;let e=(Date.now()*Math.random()*Math.atanh(Date.now())).toString(36).slice(0,6);o.document.querySelector("div#app>div[id]>div+div")?.insertAdjacentHTML("beforebegin",`
+(()=>{var o=unsafeWindow||window,i="INITIAL_STATE",t={[i]:[],fired:!1,warningShown:!1},s=new Proxy(console.log,{apply(e,n,r){Reflect.apply(e,n,["[namuwiki-powerlink-mitigation]",...r])}}),d=e=>e,c=()=>{if(t.warningShown)return;let e=(Date.now()*Math.random()*Math.atanh(Date.now())).toString(36).slice(0,6);o.document.querySelector("div#app>div[id]>div+div")?.insertAdjacentHTML("beforebegin",`
 <div id="${e}">
   <style>
     #${e} { padding: 2px 16px; }
@@ -15,4 +15,4 @@
     <button>\uC18D\uC131 \uAC12 \uBCF4\uAE30</button>
   </p>
 </div>
-`),o.document.getElementById(e)?.querySelector("button")?.addEventListener("click",()=>{let a=JSON.stringify({[i]:n[i],ua:navigator.userAgent}).replace(/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/g,"IP_ADDR_HIDDEN");o.prompt("Please copy to clipboard",a)},{once:!0}),n.warningShown=!0},r=e=>{for(let t in e)typeof e[t]=="object"?e[t]=r(e[t]):t==="enable_ads"&&!isNaN(e[t])&&(console.log("[namuwiki-powerlink-mitigation] defused namuwiki powerlink"),e[t]="0",n.fired=!0);return e};Object.defineProperty(o,i,{get(){return n[i][n[i].length-1]},set(e){n[i].push(r(e)),n.fired||s()}});})();
+`),o.document.getElementById(e)?.querySelector("button")?.addEventListener("click",()=>{let r=JSON.stringify({[i]:t[i],ua:navigator.userAgent}).replace(/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/g,"IP_ADDR_HIDDEN");o.prompt("Please copy to clipboard",r)},{once:!0}),t.warningShown=!0},a=e=>{for(let n in e)if(typeof e[n]=="object")e[n]=a(e[n]);else if(typeof e[n]=="string"&&e[n].indexOf("adcr")>=0)try{return JSON.parse(e[n]),s("defusing ad alignments"),t.fired=!0,"[]"}catch(r){d(r)}return e};Object.defineProperty(o,i,{get(){return t[i][t[i].length-1]},set(e){t[i].push(a(e)),t.fired||c()}});})();
