@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/seia-soto/namuwiki-powerlink-mitigation/compare/v1.2.1...v1.3.0) (2022-06-22)
+
+
+### Features
+
+* mitigate by removing the target element ([7dec9e5](https://github.com/seia-soto/namuwiki-powerlink-mitigation/commit/7dec9e59ed1b5be373fb2c29eb4d7b9ee9b6f858))
+
 ## [1.2.1](https://github.com/seia-soto/namuwiki-powerlink-mitigation/compare/v1.2.0...v1.2.1) (2022-06-22)
 
 
