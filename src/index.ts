@@ -39,7 +39,10 @@ frame.HTMLTableElement.prototype.appendChild = new Proxy(
 			const [child] = argArray as HTMLElement[];
 			const bypassHandler = () => Reflect.apply(target, thisArg, argArray);
 
-			if (!child.querySelectorAll('img').length) {
+			if (
+				!(child instanceof HTMLElement)
+				|| !child.querySelectorAll('img').length
+			) {
 				return bypassHandler();
 			}
 
