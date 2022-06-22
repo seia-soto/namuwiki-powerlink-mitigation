@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/seia-soto/namuwiki-powerlink-mitigation/compare/v1.2.0...v1.2.1) (2022-06-22)
+
+
+### Bug Fixes
+
+* update misleading metadata ([9ef7be3](https://github.com/seia-soto/namuwiki-powerlink-mitigation/commit/9ef7be3a2fe463e2f658d132f2fe970282189a0f))
+
 ## [1.2.0](https://github.com/seia-soto/namuwiki-powerlink-mitigation/compare/v1.1.0...v1.2.0) (2022-06-22)
 
 
