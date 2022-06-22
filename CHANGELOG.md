@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/seia-soto/namuwiki-powerlink-mitigation/compare/v1.3.0...v1.3.1) (2022-06-22)
+
+
+### Bug Fixes
+
+* add type checker ([4b5415b](https://github.com/seia-soto/namuwiki-powerlink-mitigation/commit/4b5415b41ef06cda993281f796d1bb1322578158))
+
 ## [1.3.0](https://github.com/seia-soto/namuwiki-powerlink-mitigation/compare/v1.2.1...v1.3.0) (2022-06-22)
 
 
